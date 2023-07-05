@@ -3,8 +3,69 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: Arial, sans-serif;
 }
 body{
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 450px;
+  background-color: #F4F4F9;
+}
+.popup-title{
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 20pt;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.field{
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.select-subtasks{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #535657;
+  background-color: #E6E8E6;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #535657;
+  background-color: #E6E8E6;
+  font-size: 15px;
+}
+.label{
+  font-size: 15pt;
+  margin-left: 5px;
+}
+.btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.btn-copy{
+  cursor: pointer;
+  background-color: #201A23;
+  color: #fff; 
+  font-size: 15pt;
+  padding: 10px 50px;
+  border-radius: 20px;
 }

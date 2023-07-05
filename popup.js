@@ -2,10 +2,18 @@
 const setValues = (dataValues) => {
   let taskInput = document.getElementById("input-task")
   let titleInput = document.getElementById("input-commit-title")
-  let select = document.getElementById("mySelect");
+  let subtasksSelect = document.getElementById("select-subtasks");
 
   taskInput.value = dataValues.taskId != null && dataValues.taskId != undefined ? dataValues.taskId : ""
   titleInput.value =  dataValues.title != null && dataValues.title != undefined ? dataValues.title : ""
+  if(dataValues.subTasks != null && dataValues.subTasks.length > 0){
+    dataValues.subTasks.forEach(task => {
+      let option = document.createElement("option");
+      option.text = task;
+      option.value = task;
+      subtasksSelect.appendChild(option)
+    });
+  }
 }
 
 document.addEventListener("DOMContentLoaded",() => {
