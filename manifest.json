@@ -14,7 +14,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://cisspoder.atlassian.net/*"],
+      "matches": ["https://*.atlassian.net/*"],
       "js": ["contentScript.js"]
     }
   ]
