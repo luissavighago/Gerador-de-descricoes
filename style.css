@@ -3,18 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
 }
 body{
   width: 400px;
-  height: 450px;
-  background-color: #F4F4F9;
+  height: 400px;
+  background-color: #1d2125;
+  color: #b6c2cf;
 }
 .popup-title{
   width: 100%;
-  padding: 15px;
+  padding: 10px 10px 0px 10px;
   text-align: center;
-  font-size: 20pt;
+  font-size: 15pt;
 }
 form{
   display: flex;
@@ -33,11 +34,12 @@ form{
 }
 .select-subtasks{
   width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #535657;
-  background-color: #E6E8E6;
-  font-size: 15px;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1pt solid #A6C5E229;
+  background-color: #22272b;
+  color: #b6c2cf;
+  font-size: 12px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -45,15 +47,17 @@ form{
 }
 .input{
   width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #535657;
-  background-color: #E6E8E6;
-  font-size: 15px;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1pt solid #A6C5E229;
+  background-color: #22272b;
+  color: #b6c2cf;
+  font-size: 12px;
 }
 .label{
-  font-size: 15pt;
-  margin-left: 5px;
+  font-size: 12pt;
+  margin-left: 3px;
+  margin-bottom: 2px;
 }
 .btn-container{
   display: flex;
@@ -63,9 +67,13 @@ form{
 }
 .btn-copy{
   cursor: pointer;
-  background-color: #201A23;
-  color: #fff; 
-  font-size: 15pt;
-  padding: 10px 50px;
-  border-radius: 20px;
+  background-color: #579dff;
+  color: #1d2125; 
+  font-size: 12pt;
+  padding: 8px 30px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+.btn-copy:hover {
+  background-color: #85b8ff;
 }
