@@ -66,14 +66,20 @@ form{
   width: 100%;
 }
 .btn-copy{
+  border: none;
   cursor: pointer;
   background-color: #579dff;
-  color: #1d2125; 
+  color: #fff; 
   font-size: 12pt;
-  padding: 8px 30px;
+  padding: 5px 30px;
   border-radius: 3px;
-  transition: background-color 0.3s ease;
+  transition: all 400ms ease;
 }
 .btn-copy:hover {
   background-color: #85b8ff;
+}
+.btn-copy:active {
+  border: 1px solid #A6C5E229;
+  background-color: #b6c2cf;
+  color: #22272b;
 }
