@@ -1,15 +1,15 @@
 {
-  "manifest_version":2,
-  "version":"0.0.1",
-  "name":"Gerador de descrições",
-  "description":"Gerador de descrições para commits",
-  "author":"Safadão",
+  "manifest_version": 3,
+  "version": "0.0.2",
+  "name": "Gerador de descrições",
+  "description": "Gerador de descrições para commits",
+  "author": "Safadão",
   "icons": {
     "16": "assets/icon16.png",
     "48": "assets/icon48.png",
     "128": "assets/icon128.png"
   },
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html"
   },
   "content_scripts": [
