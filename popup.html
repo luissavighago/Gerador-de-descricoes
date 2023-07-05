@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de descrições</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="popup-title">Gerador de descrições</h1>
+    <form>
+      <label for="input-task">Tarefa:</label>
+      <input id="input-task" type="text" class="input">
+
+      <label for="select-subtasks">Subtarefa:</label>
+      <select id="select-subtasks" class="select-subtasks"></select>
+
+      <label for="input-commit-title">Título do Commit:</label>
+      <input id="input-commit-title" type="text" class="input" placeholder="Título do commit">
+
+      <label for="input-version">Versão:</label>
+      <input id="input-version" type="text" class="input" placeholder="Versão">
+
+      <button id="btn-copy" class="btn-copy" type="submit">Copiar</button>
+    </form>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

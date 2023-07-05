@@ -1,0 +1,16 @@
+{
+  "manifest_version":2,
+  "version":"0.0.1",
+  "name":"Gerador de descrições",
+  "description":"Gerador de descrições para commits",
+  "author":"Safadão",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://cisspoder.atlassian.net/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
