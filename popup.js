@@ -19,9 +19,7 @@ const setValues = (dataValues) => {
 document.addEventListener("DOMContentLoaded",() => {
   chrome.tabs.query({active:true,currentWindow:true},async (tabs) => {
     var tab = tabs[0];
-    console.log(tab);
     await chrome.tabs.sendMessage(tab.id,{action: "LOAD"},(response) => {
-      console.log(response);
       setValues(response);
     })
   });
