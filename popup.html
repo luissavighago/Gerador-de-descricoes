@@ -15,15 +15,28 @@
         <input id="input-task" type="text" class="input">
       </div>
       <div class="field">
-        <label for="select-subtasks" class="label">Subtarefa:</label>
+        <div class="cfg-label">
+          <label for="select-subtasks" class="label">Subtarefa:</label>
+          <div class="cbx-container">
+            <input type="checkbox" id="cbx-manual-subtask">
+            <label for="cbx-manual-subtask" class="cbx-label">Habilitar Digitação</label>
+          </div>
+        </div>
         <select id="select-subtasks" class="select-subtasks"></select>
+        <input id="input-subtasks" class="input" style="display: none">
       </div>
       <div class="field">
         <label for="input-version" class="label">Versão:</label>
         <input id="input-version" type="text" class="input">
       </div>
       <div class="field">
-        <label for="input-commit-title" class="label">Título do Commit:</label>
+        <div class="cfg-label">
+          <label for="input-commit-title" class="label">Título do Commit:</label>
+          <div class="cbx-container">
+            <input type="checkbox" id="cbx-disable-title">
+            <label for="cbx-disable-title" class="cbx-label">Desabilitar</label>
+          </div>
+        </div>
         <input id="input-commit-title" type="text" class="input">
       </div>
       <div class="btn-container">
