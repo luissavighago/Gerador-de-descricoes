@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "name": "Gerador de descrições",
   "description": "Gerador de descrições para commits",
   "author": "Safadão",
