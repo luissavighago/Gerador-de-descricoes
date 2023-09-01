@@ -9,7 +9,7 @@ const getPageData = () => {
 }
 
 const getTaskId = () => {
-  let taskId = document.querySelector("#jira-issue-header > div > div > div > nav > ol > div.css-1nibrb0.er2v6i51 > div:nth-child(2) > li > a > span").innerHTML;
+  let taskId = document.querySelector('[data-testid="issue.views.issue-base.foundation.breadcrumbs.current-issue.item"]').querySelector('[class="css-1gd7hga"]').innerHTML;
   return taskId != null && taskId != undefined && taskId.length > 0 ? taskId : ""
 }
 
